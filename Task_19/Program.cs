@@ -5,16 +5,20 @@
 // 12821 -> да
 // 23432 -> да
 
-Console.WriteLine("Введите пятизначное число ");
-int pal = Convert.ToInt32(Console.ReadLine());
+int pal = 1;
+while  (pal <= 9999 | pal > 99999) 
+ {
+ Console.WriteLine("Введите пятизначное число ");
+  pal = Convert.ToInt32(Console.ReadLine());
 if (pal <= 9999 | pal > 99999) 
-   Console.WriteLine($"Число {pal} не является пятизначным ");
-
- void PalRound (int p)
-{
-if (p % 10 == p / 10000 && p % 100 / 10 == p / 1000 % 10)
-   Console.WriteLine($"Число {p} является палиндромом ");
- else Console.WriteLine($"Число {p} не является палиндромом ");
+    Console.WriteLine($"Число {pal} не является пятизначным ");
  }
- PalRound(pal);
+
+  void PalRound (int p)
+ {
+ if (p % 10 == p / 10000 && p % 100 / 10 == p / 1000 % 10)
+    Console.WriteLine($"{p} --> Да ");
+  else Console.WriteLine($"{p} --> Нет ");
+  }
+  PalRound(pal);
 
