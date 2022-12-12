@@ -29,9 +29,6 @@ void PrintArray(int[] arr)
     Console.Write("]");
 }
 
- int[] array = CreateArrayRndInt(m, -999, 1000);
- PrintArray(array);
-
  int GetPosElem(int[] arr)
  {
      int result = 0;
@@ -43,5 +40,7 @@ void PrintArray(int[] arr)
          return result; 
  }
 
+int[] array = CreateArrayRndInt(m, -999, 1000);
+ PrintArray(array);
  int getposelem = GetPosElem(array);
  Console.Write ($" -> {getposelem} ");
