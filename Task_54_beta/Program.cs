@@ -64,7 +64,7 @@ void DescRows(int[,] matrix)
     }
 }
 
-int[,] array2D = CreateMatrixRndInt(4, 5, 1, 9);
+int[,] array2D = CreateMatrixRndInt(4, 5, -9, 9);
 PrintMatrix(array2D, "", "", "");
 
 DescRows(array2D);
